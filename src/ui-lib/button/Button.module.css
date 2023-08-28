@@ -1,0 +1,17 @@
+.container {
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  background: lightgrey;
+  color: black;
+
+  border: none;
+  outline: none;
+}
+
+.container:hover {
+  background: grey;
+}

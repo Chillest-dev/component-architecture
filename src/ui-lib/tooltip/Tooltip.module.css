@@ -1,0 +1,19 @@
+.container {
+  background: black;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 300px;
+
+  display: none;
+}
+
+.container.active {
+  display: block;
+}

@@ -1,0 +1,16 @@
+.container {
+  flex-grow: 1;
+  background: white;
+  color: black;
+
+  padding: 16px 32px;
+}
+
+.heading {
+  font-size: 60px;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 8px;
+}
