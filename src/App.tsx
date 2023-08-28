@@ -15,10 +15,13 @@ function App() {
             tooltip={{ content: <p>This is some tooltip content</p> }}
           />
           <ButtonWithTooltip
-            label="Button with always active tooltip!"
+            label="Button with active tooltip!"
             tooltip={{
               content: <p>This is some always active tooltip content</p>,
               active: true,
+            }}
+            onMouseEnter={() => {
+              console.log("this also executes?");
             }}
           />
           <ButtonWithTooltip
