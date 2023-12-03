@@ -1,12 +1,14 @@
 import React, { useState, ReactNode, useRef } from "react";
 import ReactDOM from "react-dom";
 
+import css from "./AiTooltip.module.css";
+
 interface AiTooltipProps {
   text: string;
   children: ReactNode;
 }
 
-const AiTooltip: React.FC<AiTooltipProps> = ({ text, children }) => {
+export const AiTooltip: React.FC<AiTooltipProps> = ({ text, children }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -50,9 +52,8 @@ const AiTooltip: React.FC<AiTooltipProps> = ({ text, children }) => {
       {ReactDOM.createPortal(
         showTooltip && (
           <div
-            className="ai-tooltip-text"
+            className={css.tooltipContainer}
             style={{
-              position: "absolute",
               top: (buttonRect?.top ?? 0) + scrollY,
               left: buttonRect?.left,
             }}
